@@ -11,7 +11,7 @@ function removeNumb(){
     document.getElementById('result').value = document.getElementById('result').value.slice(0,res.length-1)
 }
 
-function getRes(){
+function getResults(){
     
   
     document.getElementById('result').value = eval(document.getElementById('result').value)

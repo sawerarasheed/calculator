@@ -1,21 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
-<body>
-    <p>hello</p>
-    <b>hy
-    </b>
-    <script>
-        prompt("helloworld")
-    </script>
-</body>
-</html> -->
 <!doctype html>
 <html lang="en">
 
@@ -31,6 +13,7 @@
 
 <style>
     .btn{
+      color: white;
         background-color: pink;
         text-shadow: 2px 2px 4px #000000;
         
@@ -62,56 +45,59 @@
             <tbody>
                 <tr>
                     <td colspan="2"><button class="btn btn-danger w-100 text-center" onclick="removeNumb()">DEL</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum()">x!</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('&#40')">&#40</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('&#41')">&#41</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('&#37')">&#37</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="clearNum(',')">AC</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum(Math.factorial)">x!</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('&#40')">&#40</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('&#41')">&#41</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('&#37')">&#37</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="clearNum(',')">AC</button></td>
                     <!--  -->
                 </tr>
                 <tr>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum()">Inv</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('Math.sin')">sin</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum()">ln</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('7')">7</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('8')">8</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('9')">9</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('/')">/</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.sec')">sec</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.sin')">sin</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum()">ln</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('7')">7</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('8')">8</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('9')">9</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('/')">/</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('Math.PI')">&pi;</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('Math.cos')">cos</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('Math.log')">log</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('4')">4</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('5')">5</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('6')">6</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('*')">X</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.PI')">&pi;</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.cos')">cos</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.log')">log</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('4')">4</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('5')">5</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('6')">6</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('*')">X</button></td>
                 </tr>
                 <tr>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('')">e</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('Maths.tan')">tan</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('Maths.sqrt')">&radic;</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('1')">1</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('2')">2</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('3')">3</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('-')">-</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.e')">e</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.tan')">tan</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.sqrt')">&radic;</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('1')">1</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('2')">2</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('3')">3</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('-')">-</button></td>
                 </tr>
                
                 <tr>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum()">,</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('Math.E')">EXP</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum()">x<sup>y</sup></button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('0')">0</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('.')">.</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getResults()">=</button></td>
-                    <td><button class="btn btn-dark w-100 text-center" onclick="getNum('+')">+</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum()">,</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.E')">EXP</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('Math.cosec')">cosec</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('.')">.</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('0')">0</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getResults()">=</button></td>
+                    <td><button class="btn  w-100 text-center" onclick="getNum('+')">+</button></td>
                 </tr>
                 
             </tbody>
         </table>
 
     </div>
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
